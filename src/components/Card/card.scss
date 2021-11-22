@@ -1,0 +1,63 @@
+.Card {
+    background-color: hsl(216, 50%, 16%);
+
+    hr {
+        height: 0.1px;
+    }
+}
+
+.Card-imageContainer {
+    position: relative;
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: hsla(178, 100%, 50%, 0.61);
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.eyeIcon {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.Card-cryptoName {
+    cursor: pointer;
+
+    &:hover {
+        color: hsl(178, 100%, 50%);
+    }
+}
+
+.Card-cryptoWorth {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.Card-profileName {
+    word-spacing: 1px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+
+    &:hover {
+        color: hsl(178, 100%, 50%);
+    }
+}
