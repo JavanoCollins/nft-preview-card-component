@@ -10,7 +10,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: auto;
   margin: auto;
   font-family: 'Outfit', sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    height: 100vh;
+  }
+  
 }
